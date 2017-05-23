@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ulatina.avanzada.calentamiento", "ulatina.avanzada.calentamiento\ulatina.avanzada.calentamiento.csproj", "{7208498E-D1FD-4D33-893E-F58E95BEBCAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ulatina.prograavanzada.helloword", "ulatina.prograavanzada.helloword\ulatina.prograavanzada.helloword.csproj", "{BEC7708E-671B-4A84-BD3C-A5F09410A6FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clase Ulatina.avanzada.test", "clase Ulatina.avanzada.test\clase Ulatina.avanzada.test.csproj", "{4131F0CA-B8DC-4F69-9EE0-6B3B75DD291D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{7208498E-D1FD-4D33-893E-F58E95BEBCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7208498E-D1FD-4D33-893E-F58E95BEBCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7208498E-D1FD-4D33-893E-F58E95BEBCAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEC7708E-671B-4A84-BD3C-A5F09410A6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC7708E-671B-4A84-BD3C-A5F09410A6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC7708E-671B-4A84-BD3C-A5F09410A6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC7708E-671B-4A84-BD3C-A5F09410A6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4131F0CA-B8DC-4F69-9EE0-6B3B75DD291D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4131F0CA-B8DC-4F69-9EE0-6B3B75DD291D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4131F0CA-B8DC-4F69-9EE0-6B3B75DD291D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4131F0CA-B8DC-4F69-9EE0-6B3B75DD291D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
