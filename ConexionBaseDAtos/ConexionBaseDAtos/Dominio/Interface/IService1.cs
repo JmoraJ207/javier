@@ -20,13 +20,13 @@ namespace ConexionBaseDAtos
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
         [OperationContract]
-        Model.Product EncontrarProductoPorNumero(string elNumero);
+        Modelo.Product EncontrarProductoPorNumero(string elNumero);
 
         [OperationContract]
-        IList<Model.Product> ListarTodos();
+        IList<Modelo.Product> ListarTodos();
 
         [OperationContract]
-        IList<Model.Product> BuscarProductoPorRangoDePrecio(decimal elPrecioInferior, decimal elPrecioSuperior);
+        IList<Modelo.Product> BuscarProductoPorRangoDePrecio(decimal elPrecioInferior, decimal elPrecioSuperior);
     }
 
 
