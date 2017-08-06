@@ -6,12 +6,36 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
+
 namespace ConexionBaseDAtos
 {
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Service1" en el código, en svc y en el archivo de configuración.
     // NOTE: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Service1.svc o Service1.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class Service1 : IService1
     {
+
+        public Modelo.Product EncontrarProductoPorNumero(string elNumero)
+        {
+            var laAccion = new Acciones.Productos();
+            var elProducto = laAccion.EncontrarProductoPorNumero(elNumero);
+            return elProducto;
+        }
+
+        public IList<Modelo.Product> ListarTodos()
+        {
+            decimal elPrecioInferior = 10, elPrecioSuperior = 20;
+            var laAccion = new Acciones.Productos();
+            var losProductos = laAccion.BuscarProductoPorRangoDePrecio(elPrecioInferior, elPrecioSuperior);
+            return losProductos;
+        }
+
+        public IList<Modelo.Product> BuscarProductoPorRangoDePrecio(decimal elPrecioInferior, decimal elPrecioSuperior)
+        {
+            var laAccion = new Acciones.Productos();
+            var losProductos = laAccion.BuscarProductoPorRangoDePrecio(elPrecioInferior, elPrecioSuperior);
+           return losProductos;
+        }
+
         public string GetData(int value)
         {
             return string.Format("You entered: {0}", value);
@@ -29,5 +53,7 @@ namespace ConexionBaseDAtos
             }
             return composite;
         }
+
+
     }
 }

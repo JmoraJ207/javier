@@ -71,17 +71,17 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Acciones\Productos.cs" />
     <Compile Include="Dominio\Servicios\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
     <Compile Include="Dominio\Interface\IService1.cs" />
+    <Compile Include="Dominio\Especificaciones\Productos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Dominio\Repositorios\Productos.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Dominio\Acciones\" />
-    <Folder Include="Dominio\Especificaciones\" />
-    <Folder Include="Dominio\Repositorios\" />
     <Folder Include="Dominio\Validaciones\" />
   </ItemGroup>
   <ItemGroup>
