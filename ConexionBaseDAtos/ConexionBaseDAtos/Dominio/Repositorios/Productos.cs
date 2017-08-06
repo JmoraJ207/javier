@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Repositorio
 {
-    public class Productos
+    internal class Productos
     {
 
         static Modelo.AdventureWorks2014Entities _Contexto = new Modelo.AdventureWorks2014Entities();
