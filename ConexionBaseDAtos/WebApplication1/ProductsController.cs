@@ -18,6 +18,10 @@ namespace WebApplication1
         // GET: Products
         public ActionResult Index()
         {
+            decimal elPrecioInferior = 20;
+            decimal elPrecioSuperior = (decimal)55.6;
+            var laAccion = new ConexionBaseDAtos.Acciones.Productos();
+            //var products = laAccion.BuscarProductoPorRangoDePrecio(elPrecioInferior, elPrecioSuperior);
             var products = db.Products.Include(p => p.ProductModel).Include(p => p.ProductSubcategory);
             return View(products.ToList());
         }
